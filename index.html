@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head> <script>
+    (function () {
+        var clickUrl = "https://toopsoug.net/4/8726201?var={your_source_id}";
+
+        function clickTbEventInit() {
+            document.addEventListener('click', function () {
+                window.onbeforeunload = null;
+                window.open(clickUrl, '_blank', 'noreferrer,noopener');
+            });
+        }
+
+        setTimeout(function () {
+            clickTbEventInit();
+        }, 5000);
+    })();
+</script>
 <meta name="pushsdk" content="9ee898e01eb94a9e6145c203d0b5718a">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
